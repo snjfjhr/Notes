@@ -238,7 +238,7 @@ function gameStart(){
     missCount = 0;
     throughCount = 0;
  
-    // speed = 3.0;
+    speed = 3.05;
     isPlaying = true;
  
     // BGMを鳴らす

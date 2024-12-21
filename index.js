@@ -222,11 +222,11 @@ function gameStart(){
     // 上から落ちてくるブロックをランダムに生成する
     // だんだん間隔を詰める
     let i=0
-    while(i < 40){
-        blocks.push(new Block(1, i));
-        blocks.push(new Block(1, i+2));
-        blocks.push(new Block(0, i+3));
-        blocks.push(new Block(1, i+6));
+    while(i < 80){
+        blocks.push(new Block(1, i+8));
+        blocks.push(new Block(1, i+10));
+        blocks.push(new Block(0, i+11));
+        blocks.push(new Block(1, i+14));
         i+=8;
     }
  

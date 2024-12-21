@@ -226,7 +226,12 @@ function gameStart(){
         blocks.push(new Block(1, i+12));
         blocks.push(new Block(0, i+13));
         blocks.push(new Block(1, i+16));
-        i+=8;
+        blocks.push(new Block(1, i+26));
+        blocks.push(new Block(0, i+27));
+        blocks.push(new Block(1, i+28));
+        blocks.push(new Block(0, i+29));
+        blocks.push(new Block(1, i+32));
+        i+=32;
     }
  
     // スコアをリセット

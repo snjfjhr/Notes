@@ -223,10 +223,10 @@ function gameStart(){
     // だんだん間隔を詰める
     let i=0
     while(i < 80){
-        blocks.push(new Block(1, i+16));
+        blocks.push(new Block(1, i+12));
+        blocks.push(new Block(1, i+14));
+        blocks.push(new Block(0, i+15));
         blocks.push(new Block(1, i+18));
-        blocks.push(new Block(0, i+19));
-        blocks.push(new Block(1, i+22));
         i+=8;
     }
  

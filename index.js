@@ -221,7 +221,7 @@ function gameStart(){
     
     // 上から落ちてくるブロックをランダムに生成する
     let i=0
-    let n0=11
+    let n0=12
     while(i < n0+64){
       d=i-n0
       if(d%32==0 || d%32==2 || d%32==6 || d%32==16 || d%32==18 || d%32==22){
@@ -238,7 +238,7 @@ function gameStart(){
     missCount = 0;
     throughCount = 0;
  
-    speed = 3.1;
+    speed = 3.2;
     isPlaying = true;
  
     // BGMを鳴らす

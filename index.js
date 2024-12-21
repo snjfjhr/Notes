@@ -218,10 +218,10 @@ setInterval(() => {
 
 function gameStart(){
     blocks.length = 0;
- 
+    
     // 上から落ちてくるブロックをランダムに生成する
     // だんだん間隔を詰める
-    for(let i=0; i < 400; i += 4){
+    for(let i=10; i < 400; i += 4){
         blocks.push(new Block(1, i));
         blocks.push(new Block(1, i+1));
         blocks.push(new Block(0, i+2));

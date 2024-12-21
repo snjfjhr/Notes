@@ -41,7 +41,7 @@ const missLaneNumbers = [];
 const throughLaneNumbers = [];
  
 let isPlaying = false; // 現在プレイ中か？
-let speed = 3.05; // 落下速度
+let speed = 3.1; // 落下速度
 let hitCount = 0; // 成功数
 let missCount = 0; // ミス数
 let throughCount = 0; // 見逃し数
@@ -238,7 +238,7 @@ function gameStart(){
     missCount = 0;
     throughCount = 0;
  
-    speed = 3.05;
+    speed = 3.1;
     isPlaying = true;
  
     // BGMを鳴らす

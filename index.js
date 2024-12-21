@@ -221,17 +221,15 @@ function gameStart(){
     
     // 上から落ちてくるブロックをランダムに生成する
     let i=0
+    let n0=10
     while(i < 80){
-        blocks.push(new Block(1, i+10));
-        blocks.push(new Block(1, i+12));
-        blocks.push(new Block(0, i+13));
-        blocks.push(new Block(1, i+16));
-        blocks.push(new Block(1, i+26));
-        blocks.push(new Block(0, i+27));
-        blocks.push(new Block(1, i+28));
-        blocks.push(new Block(0, i+29));
-        blocks.push(new Block(1, i+32));
-        i+=32;
+      if(i==n0 || i==n0+2 || i==n0+6 || i==n0+16 || i==n0+18 || i==n0+22){
+        blocks.push(new Block(1, i));
+      }
+      if(i==n0+3 || i==n0+17 || i==n0+19){
+        blocks.push(new Block(0, i));
+      }
+      i+=1
     }
  
     // スコアをリセット
@@ -239,7 +237,7 @@ function gameStart(){
     missCount = 0;
     throughCount = 0;
  
-    speed = 3;
+    speed = 4;
     isPlaying = true;
  
     // BGMを鳴らす

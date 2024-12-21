@@ -223,10 +223,10 @@ function gameStart(){
     // だんだん間隔を詰める
     for(let i=0; i < 40; i += 2)
         blocks.push(new Block(Math.floor(Math.random() * 4), i));
-    //for(let i=40; i < 70; i += 1.5)
-        //blocks.push(new Block(Math.floor(Math.random() * 4), i));
-    //for(let i=70; i < 600; i ++)
-        //blocks.push(new Block(Math.floor(Math.random() * 4), i));
+    for(let i=40; i < 70; i += 1.5)
+        blocks.push(new Block(Math.floor(Math.random() * 4), i));
+    for(let i=70; i < 600; i ++)
+        blocks.push(new Block(Math.floor(Math.random() * 4), i));
  
     // スコアをリセット
     hitCount = 0;

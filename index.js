@@ -25,9 +25,9 @@ const $canvas = document.getElementById('canvas');
 const ctx = $canvas.getContext('2d');
  
 // 効果音とBGM
-const okSound = new Audio('./ok.wav');
+const okSound = new Audio('Taiko1Note.wav');
 const missSound = new Audio('./miss.mp3');
-const bgm = new Audio('./bgm.mp3');
+const bgm = new Audio('Michiyuki_NoTaiko.wav');
  
 const drumrollSound1 = new Audio('./drumroll1.mp3');
 const drumrollSound2 = new Audio('./drumroll2.mp3');

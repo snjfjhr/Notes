@@ -221,11 +221,13 @@ function gameStart(){
     
     // 上から落ちてくるブロックをランダムに生成する
     // だんだん間隔を詰める
-    for(let i=0; i < 40; i += 8){
+    let i=0
+    while(i < 40){
         blocks.push(new Block(1, i));
         blocks.push(new Block(1, i+2));
         blocks.push(new Block(0, i+3));
         blocks.push(new Block(1, i+6));
+        i+=8;
     }
  
     // スコアをリセット

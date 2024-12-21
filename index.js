@@ -113,7 +113,7 @@ class Block{
     constructor(laneNum, delay){
         this.LaneNumber = laneNum;
         this.X = LANE_LEFTS[laneNum];
-        this.Y = - 75 * delay;
+        this.Y = - 72.5 * delay;
         this.Width = LANE_WIDTH;
         this.Height = BLOCK_HEIGHT;
  
@@ -222,7 +222,7 @@ function gameStart(){
     // 上から落ちてくるブロックをランダムに生成する
     let i=0
     let n0=12
-    while(i < n0+64){
+    while(i < n0+128){
       d=i-n0
       if(d%32==0 || d%32==2 || d%32==6 || d%32==16 || d%32==18 || d%32==22){
         blocks.push(new Block(1, i));

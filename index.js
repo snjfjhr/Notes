@@ -26,7 +26,7 @@ const ctx = $canvas.getContext('2d');
  
 // 効果音とBGM
 const okSound = new Audio('Taiko1Note.wav');
-const missSound = new Audio('./miss.mp3');
+const missSound = new Audio('Taiko1Note.wav');
 const bgm = new Audio('Michiyuki_NoTaiko.wav');
  
 const drumrollSound1 = new Audio('./drumroll1.mp3');
@@ -221,12 +221,12 @@ function gameStart(){
     
     // 上から落ちてくるブロックをランダムに生成する
     // だんだん間隔を詰める
-    for(let i=0; i < 40; i += 2)
-        blocks.push(new Block(Math.floor(Math.random() * 4), i));
-    for(let i=40; i < 70; i += 1.5)
-        blocks.push(new Block(Math.floor(Math.random() * 4), i));
-    for(let i=70; i < 600; i ++)
-        blocks.push(new Block(Math.floor(Math.random() * 4), i));
+    for(let i=0; i < 40; i += 8){
+        blocks.push(new Block(1, i));
+        blocks.push(new Block(1, i+2));
+        blocks.push(new Block(0, i+3));
+        blocks.push(new Block(1, i+6));
+    }
  
     // スコアをリセット
     hitCount = 0;

@@ -1,0 +1,42 @@
+body {
+    color: white;
+    background-color: #000;
+}
+ 
+#container {
+    width: 360px;
+}
+ 
+#field {
+    position: relative;
+}
+ 
+.button {
+    color: white;
+    position: absolute;
+    background-color: transparent;
+}
+ 
+#start {
+    color: white;
+    position: absolute;
+    background-color: transparent;
+    width: 160px;
+    height: 60px;
+    top: 300px;
+    left: 110px;
+    border: 2px outset #fff;
+}
+ 
+a{
+    color: #0ff;
+    font-weight: bold;
+}
+ 
+a:hover{
+    color: #f00;
+}
+ 
+.mt50 {
+    margin-top: 50px;
+}

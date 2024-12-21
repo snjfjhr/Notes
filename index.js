@@ -221,7 +221,7 @@ function gameStart(){
     
     // 上から落ちてくるブロックをランダムに生成する
     // だんだん間隔を詰める
-    for(let i=4; i < 400; i += 32){
+    for(let i=16; i < 400; i += 32){
         blocks.push(new Block(1, i));
         blocks.push(new Block(1, i+2));
         blocks.push(new Block(0, i+3));

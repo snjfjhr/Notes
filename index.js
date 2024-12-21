@@ -113,7 +113,7 @@ class Block{
     constructor(laneNum, delay){
         this.LaneNumber = laneNum;
         this.X = LANE_LEFTS[laneNum];
-        this.Y = - 95 * delay;
+        this.Y = - 100 * delay;
         this.Width = LANE_WIDTH;
         this.Height = BLOCK_HEIGHT;
  

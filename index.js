@@ -230,7 +230,7 @@ function gameStart(){
         blocks.push(new Block(0, i+17));
         blocks.push(new Block(1, i+18));
         blocks.push(new Block(0, i+19));
-        blocks.push(new Block(0, i+22));
+        blocks.push(new Block(1, i+22));
     }
     //for(let i=40; i < 70; i += 1.5)
         //blocks.push(new Block(Math.floor(Math.random() * 4), i));
